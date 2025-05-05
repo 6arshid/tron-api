@@ -1,34 +1,27 @@
 {
     "name": "6arshid/tron-api",
-    "description": "A modern PHP API for interacting with the Tron (TRX) blockchain.",
-    "type": "library",
+    "description": "A PHP API for interacting with Tron (Trx)",
     "license": "MIT",
+    "type": "library",
     "homepage": "https://github.com/6arshid/tron-api",
     "authors": [
         {
-            "name": "Shamsudin Serderov",
-            "email": "steein.shamsudin@gmail.com"
+            "name": "Arshid",
+            "email": "your@email.com"
         }
     ],
     "keywords": [
         "tron",
+        "tron-api",
+        "tron-php",
         "trx",
-        "tronapi",
         "blockchain",
-        "php",
-        "web3",
-        "crypto"
-    ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/6arshid/tron-api"
-        }
+        "web3"
     ],
     "require": {
         "php": "^8.2",
         "guzzlehttp/guzzle": "^7.7",
-        "6rshid/web3.php": "^2.0.1",
+        "6arshid/web3.php": "^2.0",
         "kornrunner/secp256k1": "^0.3",
         "simplito/elliptic-php": "^1.0",
         "ext-json": "*",
@@ -48,10 +41,10 @@
         }
     },
     "config": {
-        "sort-packages": true,
         "platform": {
             "php": "8.2.12"
-        }
+        },
+        "sort-packages": true
     },
     "minimum-stability": "dev",
     "prefer-stable": true
