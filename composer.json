@@ -28,7 +28,7 @@
     "require": {
         "php": "^8.2",
         "guzzlehttp/guzzle": "^7.7",
-        "iexbase/web3.php": "^2.0.1",
+        "6rshid/web3.php": "^2.0.1",
         "kornrunner/secp256k1": "^0.3",
         "simplito/elliptic-php": "^1.0",
         "ext-json": "*",
