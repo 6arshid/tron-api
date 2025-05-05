@@ -1,5 +1,5 @@
 {
-    "name": "iexbase/tron-api",
+    "name": "6arshid/tron-api",
     "description": "A PHP API for interacting with Tron (Trx)",
     "license": "MIT",
     "type":   "library",
