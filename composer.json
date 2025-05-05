@@ -3,7 +3,7 @@
     "description": "A modern PHP API for interacting with the Tron (TRX) blockchain.",
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/iexbase/tron-api",
+    "homepage": "https://github.com/6arshid/tron-api",
     "authors": [
         {
             "name": "Shamsudin Serderov",
@@ -18,6 +18,12 @@
         "php",
         "web3",
         "crypto"
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/6arshid/tron-api"
+        }
     ],
     "require": {
         "php": "^8.2",
