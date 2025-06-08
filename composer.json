@@ -6,8 +6,8 @@
   "homepage": "https://github.com/6arshid/tron-api",
   "authors": [
     {
-      "name": "Shamsudin Serderov",
-      "email": "steein.shamsudin@gmail.com"
+      "name": "6arshid",
+      "email": "6arshid@gmail.com"
     }
   ],
   "keywords": [
@@ -18,7 +18,7 @@
     "tron-rest-api"
   ],
   "require": {
-    "php": "^8.2",
+    "php": "^8.3",
     "guzzlehttp/guzzle": "^7.7",
     "kornrunner/secp256k1": "^0.3",
     "simplito/elliptic-php": "^1.1",
