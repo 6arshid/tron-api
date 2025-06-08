@@ -1,53 +1,42 @@
 {
-  "name": "6arshid/tron-api",
-  "description": "A PHP API for interacting with Tron (Trx)",
-  "license": "MIT",
-  "type": "library",
-  "homepage": "https://github.com/6arshid/tron-api",
-  "authors": [
-    {
-      "name": "6arshid",
-      "email": "6arshid@gmail.com"
-    }
-  ],
-  "keywords": [
-    "iexbase",
-    "tron-lib",
-    "tron-php",
-    "tron-api",
-    "tron-rest-api"
-  ],
+  "name": "ment-and-order-tracking",
+  "description": "Cryptocurrency Payment & Order Tracking System",
+  "type": "project",
   "require": {
     "php": ">=8.2",
-    "guzzlehttp/guzzle": "^7.7",
-    "kornrunner/secp256k1": "^0.3",
-    "simplito/elliptic-php": "^1.0",
-    "ext-json": "*",
-    "ext-bcmath": "*",
-    "6arshid/web3.php": "dev-master"
+    "6arshid/tron-api": "dev-master"
   },
-  "require-dev": {
-    "phpunit/phpunit": "^10.0"
-  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "autoload": {
     "psr-4": {
-      "IEXBase\\TronAPI\\": "src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "IEXBase\\TronAPI\\Test\\": "tests"
+      "App\\": "app/"
     }
   },
   "repositories": [
     {
       "type": "vcs",
+      "url": "https://github.com/6arshid/tron-api"
+    },
+    {
+      "type": "vcs",
       "url": "https://github.com/6arshid/web3.php"
     }
   ],
-  "minimum-stability": "dev",
-  "prefer-stable": true,
+  "scripts": {
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover --ansi"
+    ],
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php artisan key:generate --ansi"
+    ]
+  },
   "config": {
+    "optimize-autoloader": true,
     "sort-packages": true
   }
 }
